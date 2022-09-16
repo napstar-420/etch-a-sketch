@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <main>
+        <div class="main_container">
+            <span class="logo"><svg width="1.2rem" height="1.2rem" viewBox="0 0 546 544" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" width="252" height="252" fill="#FF3232"/>
+                <rect y="292" width="252" height="252" fill="#326BFF"/>
+                <rect x="294" width="252" height="252" fill="#32FF5F"/>
+                <rect x="292" y="292" width="252" height="252" fill="#FFEA32"/>
+                </svg>
+                <h1>Etch a Sketch</h1>
+            </span>
+            <div class="grid_container">
+                <!-- Grids will be added by javascript -->
+            </div>
+            <div class="controls_container">
+                <div class="control layout_control">
+                    <h2>Grid Layout</h2>
+                    <button class="toggle_list_btn">
+                        4 x 4
+                    </button>
+                    <ul class="layout_list hidden">
+                       <!-- ALl li will be add by javascript -->
+                    </ul>
+                </div>
+                <div class="control color_control">
+                    <label for="color">Color</label>
+                    <input type="color" name="color" id="color" class="color_picker" value="#6600ff">
+                </div>
+                <div class="control mode_btn_container">
+                    <button  class="control mode_btn active" id="color_mode_btn" data-mode="color">Color Mode</button>
+                    <button class="control mode_btn" id="eraser_mode_btn" data-mode="eraser">Eraser</button>
+                    <button class="control mode_btn" id="rainbow_mode_btn" data-mode="rainbow">Rainbow Mode</button>
+                </div>
+                <div class="control reset_btn_div">
+                    <button class="" id="reset_btn">Reset All</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
